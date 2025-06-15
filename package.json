@@ -1,0 +1,31 @@
+{
+  "name": "raisely-backend-test",
+  "version": "1.0.0",
+  "description": "A simplified version of the Raisely API for managing profiles and donations.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "jest tests/index.test.js --no-cache  --forceExit && jest tests/profiles.test.js --no-cache  --forceExit && jest tests/donations.test.js --no-cache  --forceExit",
+    "clear_jest": "jest --clearCache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbs89/raisely-backend-test.git"
+  },
+  "author": "Barbara Cavalot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbs89/raisely-backend-test/issues"
+  },
+  "homepage": "https://github.com/barbs89/raisely-backend-test#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
